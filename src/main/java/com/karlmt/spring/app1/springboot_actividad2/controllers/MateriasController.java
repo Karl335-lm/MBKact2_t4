@@ -1,4 +1,4 @@
-package com.karlmt.spring.app1.springboot_actividad1.controllers;
+package com.karlmt.spring.app1.springboot_actividad2.controllers;
 
 import java.util.List;
 import java.util.Map;

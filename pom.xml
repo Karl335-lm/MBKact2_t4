@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.karlmt.spring.app2</groupId>
-	<artifactId>springboot-actividad1</artifactId>
+	<artifactId>springboot-actividad2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-actividad2</name>
 	<description/>

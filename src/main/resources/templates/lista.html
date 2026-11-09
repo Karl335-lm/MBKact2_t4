@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de productos</title>
+</head>
+<body>
+
+    <h1>Listado de productos</h1>
+
+    <h3 th:text="${nombreAplicacion}"></h3>
+
+    <form action="/productos/filtrar" method="get">
+        <label>Filtrar por categoría:</label>
+        <input type="text" name="categoria">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Categoría</th>
+                <th>Detalle</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="producto : ${productos}">
+                <td th:text="${producto.id}"></td>
+                <td th:text="${producto.nombre}"></td>
+                <td th:text="${producto.precio}"></td>
+                <td th:text="${producto.categoria}"></td>
+                <td>
+                    <a th:href="@{/productos/detalle/{id}(id=${producto.id})}">
+                        Ver detalle
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <a href="/productos/formulario">Registrar producto</a>
+
+</body>
+</html>
