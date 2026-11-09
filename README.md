@@ -135,7 +135,7 @@ Se realizaron pruebas de las siguientes funcionalidades:
 
 #### 2. Formulario de productos
 
-![agregarrr](img/agregar.png.png)
+![agregarrr](img/agregar.png)
 
 #### 3. Filtro mediante @RequestParam
 
@@ -143,7 +143,7 @@ Se realizaron pruebas de las siguientes funcionalidades:
 
 #### 4. Detalle mediante @PathVariable
 
-![detalless](img/detalle.png.png)
+![detalless](img/detalle.png)
 
 #### 5. Petición POST en Postman
 
